@@ -11,19 +11,29 @@ public class PalindromeLinkedList {
         list.add("green");
         list.add("red");
         list.add("Rishab");
+        list.add("red");
+        list.add("green");
 //        list.add(40);
 //        list.add(50);
         List<String> list2=new LinkedList<>();
-        list2.add("Rishab");
-        list2.add("red");
-        list2.add("green");
-        Collections.reverse(list2);
-
-        if(list.equals(list2)){
-            System.out.println("Is an Palindrome LinkedList");
-        }else {
-            System.out.println("Is not an Palindrome LinkedList");
-
+        for (int i = list.size()-1; i >=0; i--) {
+            list2.add(list.get(i));
         }
+        boolean flag=true;
+        if(list.size()==list2.size()){
+            for (int i = 0; i < list.size(); i++) {
+                if(list.get(i)==list2.get(i)){
+                }else {
+                    flag=false;
+                    break;
+                }
+            }
+        }
+        if(flag){
+            System.out.println("The LinkedList is a palindrome");
+        }else {
+            System.out.println("The LinkedList is not a palindrome");
+        }
+
     }
 }

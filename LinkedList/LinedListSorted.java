@@ -1,4 +1,4 @@
-package LogicsProgram.LinkedList;
+package LogicsProgram.JavaProgramming;
 
 import java.util.Collections;
 import java.util.LinkedList;
